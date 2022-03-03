@@ -28,6 +28,7 @@ const Phone = ({ onNext }) => {
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
       />
+      <p>eg. 1234567890 </p>
       <div className={styles.actionButtonWrap}>
         <Button text={"Next"} onClick={submit} />
       </div>
