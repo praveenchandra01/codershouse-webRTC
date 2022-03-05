@@ -9,6 +9,7 @@ import Room from "./pages/Room/Room";
 import { useSelector } from "react-redux";
 import { useLoadingWithRefresh } from "./hooks/useLoadingWithRefresh";
 import Loader from "./components/shared/Loader/Loader";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   const { loading } = useLoadingWithRefresh();
@@ -36,6 +37,10 @@ function App() {
 
         <ProtectedRoutes path="/room/:id">
           <Room />
+        </ProtectedRoutes>
+        
+        <ProtectedRoutes path="/profile">
+          <Profile />
         </ProtectedRoutes>
       </Switch>
     </BrowserRouter>

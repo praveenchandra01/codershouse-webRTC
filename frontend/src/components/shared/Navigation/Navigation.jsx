@@ -40,7 +40,7 @@ const Navigation = () => {
         <div className={styles.navRight}>
           <h3>{user?.name}</h3>
           {
-            <Link to="/">
+            <Link to="/profile">
               <img
                 className={styles.avatar}
                 src={user.avatar ? user.avatar : "/images/monkey-avatar.png"}
